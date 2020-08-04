@@ -31,12 +31,14 @@ function CartItem(props) {
               <img src={props.product.image} alt="pic." style={{width: '150px'}}/>
             </Grid>
             <Grid item xs={12} md={2}>
-                <Box display={{ xs: 'inline-block', md: 'none' }} className={classes.heading2}>Product: :</Box>
-                {props.product.name}
+                <Box display={{ xs: 'inline-block', md: 'none' }} 
+                     className={classes.heading2}>Product: :</Box>
+                     {props.product.name}
             </Grid>
             <Grid item xs={12} md={2}>
-                <Box display={{ xs: 'inline-block', md: 'none' }} className={classes.heading2}>Price: :</Box>
-                ${props.product.price}
+                <Box display={{ xs: 'inline-block', md: 'none' }} 
+                     className={classes.heading2}>Price: :</Box>
+                     ${props.product.price}
             </Grid>
             <Grid item xs={12} md={2}>
                 <ButtonGroup variant="text">

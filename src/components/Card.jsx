@@ -9,7 +9,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import AddShoppingCartRoundedIcon from '@material-ui/icons/AddShoppingCartRounded';
-import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import {Link} from 'react-router-dom'
 import {DetailContext} from "../Context"
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
