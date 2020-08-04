@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import '../../App.css';
 import {Typography, makeStyles, Grid, Button, Box} from '@material-ui/core'
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles(theme=>({
     grid:{
@@ -66,11 +67,15 @@ function Total(props) {
                 </Typography>
             </Grid>
             <Grid item>
-                <Button variant="outlined" 
-                        className={classes.btn}>Checkout</Button>
+                <Link to="/checkout" style={{textDecoration: 'none'}}>
+                    <Button variant="outlined" 
+                            className={classes.btn}>Checkout
+                    </Button>
+                </Link>
                 <Button variant="outlined" 
                         className={classes.btn2}
-                        onClick={()=>data.clearCart()}>Clear Cart</Button>
+                        onClick={()=>data.clearCart()}>Clear Cart
+                </Button>
             </Grid>
         </Grid>
     </>

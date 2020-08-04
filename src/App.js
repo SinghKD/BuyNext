@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Catalogue from "./components/Catalogue"
 import {DetailProvider} from "./Context"
 import ProductDetail from './PoductDetail';
+import Checkout from './Checkout'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" exact component = {Home}/>
             <Route path="/cart" component={Cart}/>
             <Route path="/details" component={ProductDetail}/>
+            <Route path="/checkout" component={Checkout}/>
             <Route component={Nope} />
           </Switch>
         </div>
