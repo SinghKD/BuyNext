@@ -46,8 +46,8 @@ const useStyles = makeStyles(theme=> ({
 
 function ProductDetail() {
 
-    const {products, detailProduct} = useContext(DetailContext);
     const data = useContext(DetailContext);
+    const detailProduct = data.detailProduct;
 
     const classes = useStyles();
 
@@ -100,7 +100,7 @@ function ProductDetail() {
                         <Grid item>
                             {detailProduct.inCart? 
                                 <Link to="/cart" style={{ textDecoration: 'none' }}>
-                                <Button variant="outlined">
+                                <Button variant="outlined" className={classes.btn}>
                                     Go to Cart
                                 </Button>
                                 </Link>
