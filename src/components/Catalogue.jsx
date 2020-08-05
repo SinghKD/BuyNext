@@ -30,7 +30,7 @@ function Catalogue() {
             justify='space-around'
             alignItems="center">
                 {data.products.map(product => 
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={6} md={4} align='center'>
                         <Card key={product.id} product={product}/>
                     </Grid>)}
         </Grid>
