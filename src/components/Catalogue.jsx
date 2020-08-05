@@ -6,13 +6,13 @@ import {DetailContext} from "../Context"
 
 const useStyles = makeStyles(theme=> ({
     gridContainer:{
-        paddingLeft: '90px',
+        paddingLeft: '20px',
         paddingRight: '20px',
         paddingTop: '80px',
         paddingBottom: '50px',
         [theme.breakpoints.down('lg')]: {
-            paddingLeft: '40px',
-            paddingRight: '40px',
+            paddingLeft: '30px',
+            paddingRight: '30px',
           }, 
     }
   }));
