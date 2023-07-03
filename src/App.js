@@ -32,7 +32,7 @@ function App() {
 function Home(){
   return(
     <div style={{paddingTop: "50px", paddingBottom: "50px"}}>
-      <p><i>"Wish I knew about this website earlier. fml."</i></p>
+      <p><i>"Wish I knew about this website earlier."</i></p>
       <i>-  Thanos, a mad titan</i>
       <Catalogue />
     </div>
